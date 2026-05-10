@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const modalButtons = document.querySelectorAll('.btn-modal-info');
     const modalInstance = new bootstrap.Modal(document.getElementById('modal-generic'));
-    const modalTitle = document.getElementById('modalTitle');
+    const modalTitle = document.getElementById('modal-title');
     const modalBody = document.getElementById('modal-body-message');
 
     modalButtons.forEach(button => {
