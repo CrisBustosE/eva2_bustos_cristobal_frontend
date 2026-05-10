@@ -1,5 +1,7 @@
 # Rediseño Front-End: Municipalidad de Cholchol
 
+>**Demo en vivo:** [Github Pages - Click aquí](https://crisbustose.github.io/eva2_bustos_cristobal_frontend/)
+
 Proyecto académico enfocado en la reestructuración y mejora de la experiencia de usuario (UX/UI) de la página de inicio de la Municipalidad de Cholchol, implementando prácticas modernas de desarrollo web.
 
 ## Objetivos del Proyecto
