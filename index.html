@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Municipalidad Cholchol - Inicio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/logos/logo-cholchol.png">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- FontAwesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- ----------------- HEADER SEMÁNTICO ----------------- -->
+  <header>
+    <!-- Barra Superior (Top Bar) para enlaces legales - Visible solo en PC -->
+    <div class="bg-dark text-white py-1 d-none d-lg-block bg-external-links">
+      <div class="container d-flex justify-content-end gap-4 text-external-links">
+        <a href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498" target="_blank"
+          class="text-white text-decoration-none">Solicitar Información <i
+            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+        <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
+          target="_blank" class="text-white text-decoration-none">Transparencia Activa <i
+            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+        <a href="https://www.leylobby.gob.cl/instituciones/MU045" target="_blank"
+          class="text-white text-decoration-none">Plataforma Ley Lobby <i
+            class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+      </div>
+    </div>
+
+    <!-- Navbar Principal Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+      <div class="container">
+        <!-- Logo alineado a la izquierda (Solución celular) -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logos/logo-cholchol.png" alt="Logo Municipalidad de Cholchol" height="60">
+        </a>
+
+        <!-- Botón Hamburguesa alineado a la derecha (Solución celular) -->
+        <button class="navbar-toggler" aria-label="Abrir menú de navegación" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse justify-content-end" id="main-menu">
+          <ul class="navbar-nav fw-semibold text-center mt-3 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active text-primary" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">MUNICIPIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">PATRIMONIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#seccion-contacto">CONTACTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://municholchol.cl:2096/webmaillogout.cgi" target="_blank">WEBMAIL <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a></li>
+          </ul>
+
+          <!-- Solución Celular: Estos enlaces desaparecían en la web original. 
+                         Aquí los agregamos dentro del menú hamburguesa solo para pantallas chicas -->
+          <div class="d-lg-none mt-3 pt-3 border-top text-center">
+            <a href="https://www.portaltransparencia.cl/PortalPdT/ingreso-sai-v2?idOrg=498" target="_blank"
+              class="d-block mb-2 text-dark text-decoration-none">Solicitar Información <i
+                class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+            <a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
+              target="_blank" class="d-block mb-2 text-dark text-decoration-none">Transparencia Activa <i
+                class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+            <a href="https://www.leylobby.gob.cl/instituciones/MU045" target="_blank"
+              class="d-block mb-2 text-dark text-decoration-none">Plataforma Ley Lobby <i
+                class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ----------------- CONTENIDO PRINCIPAL ----------------- -->
+  <main>
+    <!-- ----------------- HERO SECTION ----------------- -->
+    <section class="hero-section position-relative">
+      <!-- Overlay oscuro para que el texto resalte -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+      <div id="hero-container" class="container position-relative h-100 d-flex align-items-center">
+        <div class="row w-100 mt-5 mx-0">
+          <!-- Columna Izquierda: Mensaje de Bienvenida -->
+          <div class="col-lg-7 text-white mb-4 mb-lg-0">
+            <h1 class="display-4 fw-bold mb-3 shadow-sm">Bienvenido a la Municipalidad de Cholchol</h1>
+            <p class="lead mb-4 shadow-sm">Trabajando juntos por el desarrollo, la cultura y el bienestar de nuestra
+              comuna.</p>
+            <a href="#seccion-tramites" class="btn btn-warning btn-lg fw-bold px-4">Trámites Online</a>
+          </div>
+
+          <!-- Columna Derecha: Tarjeta de Horarios (Reemplazo del Modal intrusivo original) -->
+          <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0 mb-5 mb-lg-0">
+            <div class="card shadow-lg border-0 rounded-4">
+              <div class="card-body p-4 text-center">
+                <div class="mb-3">
+                  <i class="fa-regular fa-clock fa-3x text-primary"></i>
+                </div>
+                <h4 class="card-title fw-bold text-primary mb-3">Horario de Atención</h4>
+                <p class="card-text fs-5 mb-0">Lunes a Viernes</p>
+                <p class="card-text fs-4 fw-bold text-dark">08:30 a 14:00 Hrs.</p>
+                <hr class="my-4">
+                <button class="btn btn-outline-primary w-100 fw-semibold btn-modal-info" data-title="Donde encontrarnos"data-message="Dirección: 
+                Jose Joaquin Perez 485, 5040091 Cholchol, Araucanía. 
+                
+                Contacto telefónico: 
+                +56 45 2734 255
+                
+                Horarios: 
+                Lunes a Viernes: 08:30 a 14:00 Hrs.">Ver Direcciones</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5 py-5" id="services">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase text-muni-blue">Trámites y Servicios</h2>
+        <p class="text-muted">Realice sus pagos y solicitudes de forma rápida y segura desde su hogar.</p>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card p-4">
+            <i class="fa-solid fa-car fa-3x text-muni-yellow mb-3" aria-hidden="true"></i>
+            <h5 class="fw-bold text-dark">Permiso de Circulación</h5>
+            <p class="text-muted small">Pague o renueve su permiso de circulación de forma online.</p>
+            <button class="btn btn-outline-primary mt-auto btn-modal-info" data-title="Permiso de Circulación" data-message="El portal de pagos de Permisos de Circulación se encuentra en mantención programada. Por favor, intente nuevamente más tarde.">Ir a Pagar</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card p-4">
+            <i class="fa-solid fa-trash-can fa-3x text-muni-blue mb-3" aria-hidden="true"></i>
+            <h5 class="fw-bold text-dark">Aseo y Ornato</h5>
+            <p class="text-muted small">Consulte y pague sus derechos de aseo domiciliario.</p>
+            <button class="btn btn-outline-primary mt-auto btn-modal-info" data-title="Derechos de Aseo" data-message="Para consultar su deuda de aseo, necesitará tener a mano el número de Rol de su propiedad.">Consultar Deuda</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card p-4">
+            <i class="fa-solid fa-file-contract fa-3x text-success mb-3" aria-hidden="true"></i>
+            <h5 class="fw-bold text-dark">Certificados</h5>
+            <p class="text-muted small">Obtenga certificados de residencia y otros documentos.</p>
+            <button class="btn btn-outline-primary mt-auto btn-modal-info" data-title="Emisión de Certificados" data-message="Será redirigido al portal externo de firma electrónica avanzada de la municipalidad.">Solicitar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- SECCIÓN PARTICIPACIÓN CIUDADANA ----------------- -->
+    <section class="container my-5 py-5" id="surveys">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase text-muni-blue">Participación Ciudadana</h2>
+        <p class="text-muted">Tu opinión es fundamental para el desarrollo de nuestra comuna.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Tarjeta Encuesta 1 (Deportes) -->
+        <div class="col-md-5">
+          <div class="card h-100 shadow-sm border-0 interactive-card">
+            <div class="card-body text-center p-4">
+              <div class="mb-3">
+                <i class="fa-solid fa-person-running fa-3x text-muni-yellow"></i>
+              </div>
+              <h4 class="card-title fw-bold text-dark">Gustos y Actividades Deportivas</h4>
+              <p class="card-text text-muted mb-4">Ayúdanos a mejorar los espacios, talleres y actividades deportivas de
+                Cholchol.</p>
+              <!-- Botón estructurado reemplazando el texto plano -->
+              <a href="#" target="_blank" class="btn btn-outline-primary fw-bold w-100">Participar en Encuesta <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Encuesta 2 (Medio Ambiente) -->
+        <div class="col-md-5">
+          <div class="card h-100 shadow-sm border-0 interactive-card">
+            <div class="card-body text-center p-4">
+              <div class="mb-3">
+                <i class="fa-solid fa-leaf fa-3x leaf-color"></i>
+              </div>
+              <h4 class="card-title fw-bold text-dark">Cambio Climático local</h4>
+              <p class="card-text text-muted mb-4">Queremos conocer tu perspectiva sobre el cuidado del medio ambiente y
+                reciclaje.</p>
+              <a href="#" target="_blank" class="btn btn-outline-success fw-bold w-100">Participar en Encuesta <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------- SECCIÓN DE NOTICIAS Y AVISOS ----------------- -->
+    <section class="container my-5 py-5" id="news">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase text-muni-blue">Avisos y Comunicados</h2>
+        <p class="text-muted">Manténgase informado con las últimas noticias, concursos y actividades de la comuna.</p>
+      </div>
+
+      <!-- Grilla de 3 columnas en PC, 2 en Tablet, 1 en Celular -->
+      <div class="row g-4">
+
+        <!-- Noticia 1: Retiro de Ramas -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card">
+            <img src="assets/img/flyers/ramas-cholchol.jpg" class="card-img-top img-flyer"
+              alt="Afiche sobre retiro de ramas en la comuna">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-warning mb-2 align-self-start">Servicios</span>
+              <h5 class="card-title fw-bold text-dark">Operativo: Retiro de Ramas</h5>
+              <p class="card-text text-muted small mb-4">Se realizará el retiro por las calles principales de Cholchol.
+                Recuerda sacar tus ramas el día anterior sin bolsas ni escombros.</p>
+              <!-- El mt-auto empuja el pie de la tarjeta hacia abajo para que todas queden alineadas -->
+              <div class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="text-primary fw-bold"><i class="fa-regular fa-calendar me-1"></i> 5 de Mayo</span>
+                <button class="btn btn-sm btn-outline-primary fw-semibold btn-modal-info" data-title="Operativo de Ramas" data-message="El retiro de ramas comenzará a las 08:00 AM. Asegúrese de dejar los escombros en la acera sin obstaculizar el paso peatonal.">Ver Detalle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Noticia 2: Concurso Literario -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card">
+            <img src="assets/img/flyers/concurso-literario-cholchol.png" class="card-img-top img-flyer"
+              alt="Afiche del concurso literario Cholchol en 100 palabras">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-info text-white mb-2 align-self-start">Cultura</span>
+              <h5 class="card-title fw-bold text-dark">Concurso: Cholchol en 100 Palabras</h5>
+              <p class="card-text text-muted small mb-4">Participa en nuestro concurso literario. Entrega de bases hasta
+                el 24 de abril en la oficina de la Unidad de Cultura.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="text-primary fw-bold"><i class="fa-regular fa-calendar me-1"></i> Hasta 30 Abril</span>
+                <button class="btn btn-sm btn-outline-primary fw-semibold btn-modal-info" data-title="Concurso Cholchol en 100 palabras." data-message="Entrega de bases y recepción de obras en la oficina de unidad de cultura. 
+                
+                Dirección: 
+                Arturo Prat #247, Cholchol, Región de La Araucanía.">Bases Aquí</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Noticia 3: Concurso Público -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 interactive-card">
+            <img src="assets/img/flyers/concurso-trabajo-cholchol.png" class="card-img-top img-flyer"
+              alt="Afiche de concurso público para apoyo familiar integral">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-success mb-2 align-self-start">Empleo</span>
+              <h5 class="card-title fw-bold text-dark">Concurso Público: Apoyo Familiar</h5>
+              <p class="card-text text-muted small mb-4">Cargo disponible de media jornada para el Programa de
+                Acompañamiento Familiar Integral. Postulaciones abiertas.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center border-top pt-3">
+                <span class="text-primary fw-bold"><i class="fa-solid fa-briefcase me-1"></i> Oferta Laboral</span>
+                <button class="btn btn-sm btn-outline-primary fw-semibold btn-modal-info" data-title="Concurso Apoyo Familiar" data-message="Por favor contactese con la OMIL para solicitar un formulario especial llamando a: +56 452 734236.">Postular</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botón para ver el historial de noticias (Toque de realismo para el sitio) -->
+      <div class="text-center mt-5">
+        <button class="btn btn-outline-secondary px-4 fw-bold btn-modal-info" data-title="Mantenimiento en curso" data-message="Sección en mantenimiento disculpe las molestias.">Ver todos los comunicados <i
+            class="fa-solid fa-arrow-right ms-2"></i></button>
+      </div>
+    </section>
+    <!-- ----------------- SECCIÓN DE CONTACTO Y DIRECTORIO (CRITERIOS CE1, CE2, CE3) ----------------- -->
+    <section class="bg-light py-5" id="contact">
+      <div class="container my-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-uppercase text-muni-blue">Atención Ciudadana</h2>
+          <p class="text-muted">Envíenos sus consultas o contáctese directamente con nuestros departamentos.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Columna Izquierda: Formulario de Contacto (7 de 12 columnas) -->
+          <div class="col-lg-7">
+            <div class="card shadow-sm border-0 rounded-4 h-100">
+              <div class="card-body p-4 p-md-5">
+                <h4 class="fw-bold mb-4 text-muni-blue">Envíenos un Mensaje</h4>
+
+                <!-- Contenedor para el mensaje dinámico de éxito (JS) -->
+                <div id="message-alert" class="d-none alert" role="alert"></div>
+
+                <form id="contact-form" novalidate>
+                  <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold">Nombre Completo</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white"><i class="fa-regular fa-user"></i></span>
+                      <input type="text" class="form-control" id="name" placeholder="Ej. Juan Pérez" required>
+                      <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white"><i class="fa-regular fa-envelope"></i></span>
+                      <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                      <div class="invalid-feedback">Por favor, ingrese un correo válido.</div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="subject" class="form-label fw-semibold">Asunto</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white"><i class="fa-solid fa-pen"></i></span>
+                      <input type="text" class="form-control" id="subject" placeholder="Ej. Consulta sobre patentes" required>
+                      <div class="invalid-feedback">Por favor, ingrese el asunto de su consulta (Mínimo 5 caracteres).</div>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="message" class="form-label fw-semibold">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Escriba su consulta aquí..."
+                      required></textarea>
+                    <div class="invalid-feedback">El mensaje no puede estar vacío (Mínimo 10 caracteres).</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 fw-bold py-2 btn-form-muni" id="btn-send">
+                    Enviar Mensaje <i class="fa-regular fa-paper-plane ms-2"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Directorio Telefónico (5 de 12 columnas) -->
+          <div class="col-lg-5">
+            <div class="card shadow-sm border-0 rounded-4 h-100" style="background-color: #ffffff;">
+              <div class="card-body p-4 p-md-5 d-flex flex-column">
+                <h4 class="fw-bold mb-4 text-muni-blue">Directorio Telefónico</h4>
+
+                <!-- Tabla responsiva y estilizada de Bootstrap -->
+                <div class="table-responsive flex-grow-1">
+                  <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                      <tr>
+                        <th class="text-muted text-uppercase small">Área / Departamento</th>
+                        <th class="text-muted text-uppercase small text-end">Anexo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="fw-medium">Informaciones</td>
+                        <td class="text-end text-primary fw-bold">452 734200</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-medium">OMIL</td>
+                        <td class="text-end text-primary fw-bold">452 734236</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-medium">Subsidios y Pensiones</td>
+                        <td class="text-end text-primary fw-bold">452 734230</td>
+                      </tr>
+                      <tr>
+                        <td class="fw-medium">Programa Mujeres Jefas de Hogar</td>
+                        <td class="text-end text-primary fw-bold">452 734224</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Info extra de contacto abajo -->
+                <div class="mt-4 pt-3 border-top text-center">
+                  <p class="text-muted mb-1"><i class="fa-solid fa-location-dot me-2 text-danger"></i>José Joaquín Pérez
+                    449, Cholchol</p>
+                  <p class="text-muted mb-0"><i
+                      class="fa-solid fa-envelope me-2 text-primary"></i>alcaldia@municholchol.cl</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ----------------- FOOTER INSTITUCIONAL ----------------- -->
+  <footer class="text-white pt-5 pb-4 mt-5 bg-muni-blue">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+
+        <!-- Columna 1: Logo y descripción -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <img src="assets/img/logos/logo-cholchol-blanco.png" alt="Logo Municipalidad de Cholchol" height="80" class="mb-4">
+          <p class="small">Trabajando juntos por el desarrollo, la cultura y el bienestar de nuestra comuna. Cholchol,
+            tierra de tradiciones.</p>
+        </div>
+
+        <!-- Columna 2: Enlaces de Transparencia -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-muni-yellow">Transparencia</h5>
+          <p><a href="https://www.portaltransparencia.cl/PortalPdT/directorio-de-organismos-regulados/?org=MU045"
+              target="_blank" class="text-white text-decoration-none small">Transparencia Activa</a></p>
+          <p><a href="https://www.leylobby.gob.cl/instituciones/MU045" target="_blank"
+              class="text-white text-decoration-none small">Plataforma Ley Lobby</a></p>
+          <p><a href="#" class="text-white text-decoration-none small">Cuenta Pública</a></p>
+          <p><a href="#" class="text-white text-decoration-none small">Ordenanzas</a></p>
+        </div>
+
+        <!-- Columna 3: Contacto Directo -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-muni-yellow">Contacto</h5>
+          <p class="small"><i class="fa-solid fa-house me-2"></i> José Joaquín Pérez 449, Cholchol</p>
+          <p class="small"><i class="fa-solid fa-envelope me-2"></i> alcaldia@municholchol.cl</p>
+          <p class="small"><i class="fa-solid fa-phone me-2"></i>+56 45 273 4255</p>
+        </div>
+
+        <!-- Columna 4: Redes Sociales -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold text-muni-yellow">Síguenos</h5>
+          <!-- Botones flotantes de FontAwesome -->
+          <a href="https://www.facebook.com/" target="_blank"
+            class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#" role="button"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/" target="_blank" class="btn btn-outline-light btn-floating m-1 rounded-circle"
+            href="#" role="button"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#" role="button"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <hr class="mb-4 mt-4" style="border-color: rgba(255,255,255,0.2);">
+
+      <!-- Copyright -->
+      <div class="row align-items-center">
+        <div class="col-12 text-center">
+          <p class="mb-0 small">© 2026 Municipalidad de Cholchol. Todos los derechos reservados. Desarrollado para la
+            comunidad.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para darle feedback al usuario -->
+  <div class="modal fade" id="modal-generic" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-muni-blue text-white">
+          <h5 class="modal-title" id="modal-title">Título por defecto</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar ventana"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-body-message">Mensaje por defecto.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Boton de subida -->
+  <button id="btn-go-up" class="btn btn-warning rounded-circle shadow-lg text-dark" title="Volver arriba">
+    <i class="fa-solid fa-arrow-up fs-4"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <!-- JS Propio -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
